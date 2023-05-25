@@ -8,10 +8,10 @@
 		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ms.pd</groupId>
-	<artifactId>Microservice_Plan</artifactId>
+	<groupId>com.ms.sd</groupId>
+	<artifactId>Microservice_Stock</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Microservice_Plan</name>
+	<name>Microservice_Stock</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

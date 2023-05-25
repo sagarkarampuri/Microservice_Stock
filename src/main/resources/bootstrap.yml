@@ -1,0 +1,15 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: StockMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML

@@ -28,7 +28,7 @@ public class ExceptionControllerAdvice {
 	public ResponseEntity<ErrorInfo> stockExceptionHandler(StockException exception) {
 		logger.error(environment.getProperty(exception.getMessage()), exception);
 		ErrorInfo errorInfo = new ErrorInfo();
-		errorInfo.setErrorMsg(environment.getProperty(exception.getMessage()));
+		errorInfo.setErrorMsg(exception.getMessage());
 		errorInfo.setErrorCode(HttpStatus.BAD_REQUEST.value());
 		return new ResponseEntity<>(errorInfo, HttpStatus.BAD_REQUEST);
 	}
